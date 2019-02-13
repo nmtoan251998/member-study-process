@@ -1,0 +1,5 @@
+@mixin btn-deco($bg-color, $txt-color, $bd-color) {    
+    background-color: $bg-color;
+    color: $txt-color;
+    border: 1px solid $bd-color;
+}

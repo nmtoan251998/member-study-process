@@ -1,0 +1,24 @@
+{
+  "name": "members-study-process",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "devserver": "live-server",
+    "compile-sass": "sass assets/sass/main.scss assets/css/giaiBaiTap.css"
+  },
+  "author": "Noat",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nmtoan251998/giai-bai-tap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nmtoan251998/giai-bai-tap/issues"
+  },
+  "homepage": "https://github.com/nmtoan251998/giai-bai-tap#readme",
+  "description": ""
+}
