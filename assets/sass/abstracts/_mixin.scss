@@ -3,3 +3,11 @@
     color: $txt-color;
     border: 1px solid $bd-color;
 }
+
+@mixin box-deco($bg-color, $box-color) {
+    background-color: $bg-color;    
+    border: 1px solid transparent;
+    border-radius: 2px;
+    box-shadow: 4px 5px 20px -1px $box-color;
+    filter: brightness(115%);
+}

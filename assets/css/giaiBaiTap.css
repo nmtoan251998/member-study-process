@@ -14,10 +14,51 @@ body {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
 
+.heading-1 {
+  font-size: 3.6rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.heading-2--light {
+  color: #ccc;
+}
+.heading-2--dark {
+  color: #252525;
+}
+
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-mb-s {
+  margin-bottom: 2.5rem !important;
+}
+
+.u-mb-m {
+  margin-bottom: 5rem !important;
+}
+
+.u-mb-l {
+  margin-bottom: 7.5rem !important;
+}
+
+.u-mb-xl {
+  margin-bottom: 10rem !important;
+}
+
+.heading-1, .heading-2 {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3.5px;
+  word-spacing: 5px;
 }
 
 .btn--link {
@@ -43,12 +84,26 @@ body {
   transform: translateY(-2px);
 }
 
+.course {
+  width: 85%;
+  margin: 5rem auto 0;
+  padding: 1.6rem;
+  padding-bottom: 0.5rem;
+  background-color: #e6e6e6;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 4px 5px 20px -1px #333;
+  filter: brightness(115%);
+}
 .course__heading {
+  float: left;
+  margin: 0;
+}
+.course__btn {
   float: right;
 }
 .course__intro {
-  display: block;
-  clear: both;
+  width: 85%;
 }
 
 /*# sourceMappingURL=giaiBaiTap.css.map */

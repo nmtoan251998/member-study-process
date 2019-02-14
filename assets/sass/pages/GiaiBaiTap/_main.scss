@@ -1,7 +1,21 @@
-.course {
+.course {    
+    width: 85%;
+    margin: 5rem auto 0;
+    padding: 1.6rem;
+    padding-bottom: .5rem;
+
+    @include box-deco($color-gray-1, $color-dark);
+
     &__heading {
-        float: right;
+        float: left;
+        margin: 0;
     }
     
-    
+    &__btn {
+        float: right;
+    }
+
+    &__intro {
+        width: 85%;        
+    }
 }

@@ -3,18 +3,23 @@ $color-blue: #4a90e2;
 $color-blue-1: #007bff;
 
 $color-light: #fff;
+$color-light-1: #f3f3f3;
 
 $color-gray: #ccc;
+$color-gray-1: rgb(230, 230, 230);
 
 $color-dark: #333;
 $color-dark-1: #252525;
 $color-dark-2: #666666;
 
 // FONT-SIZE
-$font-size-small: 1.35rem;
-$font-size-default: 1.6rem;
-$font-size-large: 2rem;
-$font-size-huge: 2.4rem;
+$font-size-s: 1.35rem;
+$font-size-m: 1.6rem;
+$font-size-l: 2rem;
+$font-size-xl: 2.4rem;
+$font-size-xxl: 3rem;
+$font-size-xxxl: 3.6rem;
+$font-size-xxxxl: 4rem;
 
 // FONT-FAMILY
 $font-family-primary: 'Open Sans', 'Helvetica', 'Arial', sans-serif;

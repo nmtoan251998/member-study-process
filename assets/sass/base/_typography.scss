@@ -1,0 +1,17 @@
+.heading-1 {
+    @extend %heading;
+    font-size: $font-size-xxxl;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-weight: 600;
+    font-size: $font-size-xxl;  
+    
+    &--light {
+        color: $color-gray;
+    }
+    &--dark {
+        color: $color-dark-1;
+    }
+}
