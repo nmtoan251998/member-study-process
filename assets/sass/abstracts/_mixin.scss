@@ -1,7 +1,26 @@
+// BREAKPOINTS
+@mixin breakpoint($point) {
+    @if $point == mobile {
+        @media (max-width: 400px) {
+            @content ;
+        }
+    }
+    @else if $point == laptop {
+        @media (max-width: 1200px) {
+            @content ;
+        }
+    }
+    @else if $point == desktop {
+        @media (max-width: 1600px) {
+            @content ;
+        }
+    }
+}
+
 @mixin btn-deco($bg-color, $txt-color, $bd-color) {    
     background-color: $bg-color;
     color: $txt-color;
-    border: 1px solid $bd-color;
+    border: 2px solid $bd-color;
 }
 
 @mixin box-deco($bg-color, $box-color) {

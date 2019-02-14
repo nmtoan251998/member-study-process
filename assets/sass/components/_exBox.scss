@@ -1,0 +1,3 @@
+.box {
+    @include box-deco($color-gray-1, $color-dark);
+}

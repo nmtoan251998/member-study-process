@@ -77,11 +77,19 @@ body {
 .btn--primary {
   background-color: #4a90e2;
   color: #fff;
-  border: 1px solid #4a90e2;
+  border: 2px solid #4a90e2;
 }
 .btn:hover {
-  filter: brightness(110%);
+  filter: brightness(90%);
   transform: translateY(-2px);
+}
+
+.box {
+  background-color: #e6e6e6;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  box-shadow: 4px 5px 20px -1px #333;
+  filter: brightness(115%);
 }
 
 .course {
@@ -89,11 +97,6 @@ body {
   margin: 5rem auto 0;
   padding: 1.6rem;
   padding-bottom: 0.5rem;
-  background-color: #e6e6e6;
-  border: 1px solid transparent;
-  border-radius: 2px;
-  box-shadow: 4px 5px 20px -1px #333;
-  filter: brightness(115%);
 }
 .course__heading {
   float: left;

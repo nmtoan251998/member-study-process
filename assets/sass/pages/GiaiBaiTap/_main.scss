@@ -3,9 +3,7 @@
     margin: 5rem auto 0;
     padding: 1.6rem;
     padding-bottom: .5rem;
-
-    @include box-deco($color-gray-1, $color-dark);
-
+    
     &__heading {
         float: left;
         margin: 0;

@@ -11,7 +11,8 @@
     &--primary { @include btn-deco($color-blue, $color-light, $color-blue);}
 
     &:hover {
-        filter: brightness(110%);
+        filter: brightness(90%);
         transform: translateY(-2px);
     }
+    
 }
