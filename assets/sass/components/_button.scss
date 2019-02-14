@@ -1,18 +1,17 @@
-.course {
-    
-    &__btn {
-        float: right;
+.btn {
+    display: inline-block;    
+    border-radius: 5px;
 
-        @extend %btn-link;
-        @include btn-deco($color-blue, $color-light, $color-blue);
-        border-radius: 5px;
-        
-        transition: transform .2s ease-in-out;
-        margin-right: 2rem;
-        
-        &:hover {
-            filter: brightness(110%);
-            transform: translateY(-2px);
-        }
+    transition: transform .2s ease-in-out;
+    
+    &--link {
+        @extend %btn--link;
+    }
+
+    &--primary { @include btn-deco($color-blue, $color-light, $color-blue);}
+
+    &:hover {
+        filter: brightness(110%);
+        transform: translateY(-2px);
     }
 }

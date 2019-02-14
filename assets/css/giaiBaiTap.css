@@ -11,28 +11,44 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.6rem;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
 
-.course__btn {
-  display: inline-block;
-  text-decoration: none;
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.btn--link {
   padding: 1rem 2rem;
+  text-decoration: none;
   font-weight: 700;
+  font-size: 1.35rem;
   text-transform: uppercase;
 }
 
-.course__btn {
-  float: right;
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.btn--primary {
   background-color: #4a90e2;
   color: #fff;
   border: 1px solid #4a90e2;
-  border-radius: 5px;
-  transition: transform 0.2s ease-in-out;
-  margin-right: 2rem;
 }
-.course__btn:hover {
+.btn:hover {
   filter: brightness(110%);
   transform: translateY(-2px);
+}
+
+.course__heading {
+  float: right;
+}
+.course__intro {
+  display: block;
+  clear: both;
 }
 
 /*# sourceMappingURL=giaiBaiTap.css.map */
