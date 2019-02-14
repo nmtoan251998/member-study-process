@@ -105,5 +105,8 @@ body {
 .course__intro {
   width: 85%;
 }
+.course__intro-text {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "LiberatioMono", "Courier New", monospace;
+}
 
 /*# sourceMappingURL=giaiBaiTap.css.map */

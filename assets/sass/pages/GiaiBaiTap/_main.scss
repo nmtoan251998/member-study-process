@@ -16,6 +16,10 @@
     }
 
     &__intro {
-        width: 85%;        
+        width: 85%; 
+        
+        &-text {
+            font-family: $font-family-monospace;
+        }
     }
 }
