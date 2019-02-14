@@ -67,6 +67,7 @@ body {
   font-weight: 700;
   font-size: 1.35rem;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .btn {
@@ -98,18 +99,30 @@ body {
   padding: 1.6rem;
   padding-bottom: 0.5rem;
 }
+@media (max-width: 400px) {
+  .course__heading {
+    min-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .course__btn {
+    width: 100%;
+    margin: 2rem auto 0;
+  }
+  .course__intro {
+    text-align: center;
+  }
+}
 .course__heading {
   float: left;
   margin: 0;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "LiberatioMono", "Courier New", monospace;
 }
 .course__btn {
   float: right;
 }
 .course__intro {
-  width: 85%;
-}
-.course__intro-text {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "LiberatioMono", "Courier New", monospace;
+  width: 90%;
 }
 
 /*# sourceMappingURL=giaiBaiTap.css.map */

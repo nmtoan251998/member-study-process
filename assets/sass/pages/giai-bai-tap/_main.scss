@@ -1,0 +1,37 @@
+.course {    
+    width: 85%;
+    margin: 5rem auto 0;
+    padding: 1.6rem;
+    padding-bottom: .5rem;
+
+    @include breakpoint(mobile) {        
+        &__heading {        
+            min-width: 100%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        &__btn {            
+            width: 100%;
+            margin: 2rem auto 0;
+        }
+
+        &__intro {
+            text-align: center;
+        }
+    }
+    
+    &__heading {
+        float: left;
+        margin: 0;
+        font-family: $font-family-monospace;
+    }
+    
+    &__btn {
+        float: right;
+    }
+
+    &__intro {
+        width: 90%;         
+    }
+}
