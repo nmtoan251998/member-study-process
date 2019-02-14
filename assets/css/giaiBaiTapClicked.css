@@ -1,0 +1,125 @@
+* {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+.heading-1 {
+  font-size: 3.6rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.heading-2--light {
+  color: #ccc;
+}
+.heading-2--dark {
+  color: #252525;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-mb-s {
+  margin-bottom: 2.5rem !important;
+}
+
+.u-mb-m {
+  margin-bottom: 5rem !important;
+}
+
+.u-mb-l {
+  margin-bottom: 7.5rem !important;
+}
+
+.u-mb-xl {
+  margin-bottom: 10rem !important;
+}
+
+.heading-1, .heading-2 {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3.5px;
+  word-spacing: 5px;
+}
+
+.btn--link {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.btn--primary {
+  background-color: #4a90e2;
+  color: #fff;
+  border: 2px solid #4a90e2;
+}
+.btn:hover {
+  filter: brightness(90%);
+  transform: translateY(-2px);
+}
+
+.dropdown__menu {
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.dropdown__list {
+  background-color: #4a90e2;
+}
+.dropdown__item {
+  display: inline-block;
+  border-radius: 0;
+  text-align: left;
+}
+
+.coding {
+  position: relative;
+  width: 85%;
+  margin: 5rem auto 0;
+  padding: 1.6rem;
+  border: 1px solid black;
+}
+.coding__heading {
+  float: left;
+  margin: 0;
+}
+.coding__list {
+  position: absolute;
+  right: 1.6rem;
+  top: 1.6rem;
+}
+.coding__list-btn {
+  border-radius: 0;
+}
+
+/*# sourceMappingURL=giaiBaiTapClicked.css.map */

@@ -1,0 +1,20 @@
+.dropdown {    
+    &__menu {
+        list-style-type: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;    
+    }
+
+    &__list {
+        background-color: $color-blue;        
+    }
+
+    &__item {
+        display: inline-block;           
+        border-radius: 0px;        
+        text-align: left;
+    }
+}
