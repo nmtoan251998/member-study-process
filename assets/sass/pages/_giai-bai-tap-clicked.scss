@@ -18,6 +18,11 @@
         &-btn {
             border-radius: 0;
         }
+
+        &:hover .dropdown__list {            
+            visibility: visible;
+            display: block;
+        }
     }
 
 

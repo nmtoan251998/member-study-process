@@ -6,15 +6,24 @@
         width: 100%;
         margin: 0;
         padding: 0;    
+        transform: translateY(-2px);                                
     }
 
-    &__list {
+    &__list {        
         background-color: $color-blue;        
+        border-top: 1px solid $color-light;        
+        cursor: pointer;
+        visibility: hidden;
+        display: none;        
+
+        &:hover {
+            filter: brightness(120%);
+        }        
     }
 
     &__item {
         display: inline-block;           
         border-radius: 0px;        
-        text-align: left;
+        text-align: left;        
     }
 }

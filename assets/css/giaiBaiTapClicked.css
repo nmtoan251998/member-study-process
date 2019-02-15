@@ -92,13 +92,21 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  transform: translateY(-2px);
 }
 .dropdown__list {
   background-color: #4a90e2;
+  border-top: 1px solid #fff;
+  cursor: pointer;
+  visibility: hidden;
+  display: none;
+}
+.dropdown__list:hover {
+  filter: brightness(120%);
 }
 .dropdown__item {
   display: inline-block;
-  border-radius: 0;
+  border-radius: 0px;
   text-align: left;
 }
 
@@ -120,6 +128,10 @@ body {
 }
 .coding__list-btn {
   border-radius: 0;
+}
+.coding__list:hover .dropdown__list {
+  visibility: visible;
+  display: block;
 }
 
 /*# sourceMappingURL=giaiBaiTapClicked.css.map */
