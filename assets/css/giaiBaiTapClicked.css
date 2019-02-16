@@ -129,12 +129,17 @@ body {
 .coding__ex-list {
   width: 85%;
   margin: 0 auto;
-  border: 1px solid black;
+  border: 1px solid #666666;
+  border-radius: 2px;
   overflow-x: auto;
 }
 
 .coding__table {
   counter-reset: tableCounter;
+  -webkit-border-vertical-spacing: 10px;
+  color: #666666;
+  padding: 0.5rem;
+  padding-top: 4rem;
   width: 100%;
 }
 .coding__table-counter-cell::before {
@@ -143,6 +148,7 @@ body {
 }
 .coding__table-head {
   text-align: left;
+  color: #666666;
 }
 .coding__table-head:nth-child(1) {
   width: 10%;
@@ -159,12 +165,12 @@ body {
 .coding__table-head:nth-child(5) {
   width: 15%;
 }
+
 .coding {
   position: relative;
   width: 85%;
   margin: 5rem auto 0;
   padding: 1.6rem;
-  border: 1px solid black;
 }
 .coding__heading {
   float: left;

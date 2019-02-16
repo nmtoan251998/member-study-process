@@ -1,13 +1,19 @@
 .coding__ex-list {
     width: 85%;
     margin: 0 auto;    
-    border: 1px solid black;
+    border: 1px solid $color-dark-2;
+    border-radius: 2px;
     overflow-x: auto;
 }
 
 .coding__table {        
     counter-reset: tableCounter;
+
+    -webkit-border-vertical-spacing: 10px;
     
+    color: $color-dark-2;
+    padding: .5rem;
+    padding-top: 4rem;
     width: 100%;
     
 
@@ -17,7 +23,8 @@
     }
     
     &-head {
-        text-align: left;        
+        text-align: left;     
+        color: $color-dark-2;         
 
         &:nth-child(1) {width: 10%}
         &:nth-child(2) {width: 20%}
