@@ -15,11 +15,7 @@
         content: counter(tableCounter);
         counter-increment: tableCounter;
     }
-
-    &-row {
-
-    }
-
+    
     &-head {
         text-align: left;        
 
@@ -28,9 +24,5 @@
         &:nth-child(3) {width: 40%}
         &:nth-child(4) {width: 15%}
         &:nth-child(5) {width: 15%}
-    }
-
-    &-data {
-
     }
 }
