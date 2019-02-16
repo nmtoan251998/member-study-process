@@ -55,6 +55,22 @@ body {
   margin-bottom: 10rem !important;
 }
 
+.u-mt-s {
+  margin-top: 2.5rem !important;
+}
+
+.u-mt-m {
+  margin-top: 5rem !important;
+}
+
+.u-mt-l {
+  margin-top: 7.5rem !important;
+}
+
+.u-mt-xl {
+  margin-top: 10rem !important;
+}
+
 .heading-1, .heading-2 {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   letter-spacing: 3.5px;
@@ -110,6 +126,39 @@ body {
   text-align: left;
 }
 
+.coding__ex-list {
+  width: 85%;
+  margin: 0 auto;
+  border: 1px solid black;
+  overflow-x: auto;
+}
+
+.coding__table {
+  counter-reset: tableCounter;
+  width: 100%;
+}
+.coding__table-counter-cell::before {
+  content: counter(tableCounter);
+  counter-increment: tableCounter;
+}
+.coding__table-head {
+  text-align: left;
+}
+.coding__table-head:nth-child(1) {
+  width: 10%;
+}
+.coding__table-head:nth-child(2) {
+  width: 20%;
+}
+.coding__table-head:nth-child(3) {
+  width: 40%;
+}
+.coding__table-head:nth-child(4) {
+  width: 15%;
+}
+.coding__table-head:nth-child(5) {
+  width: 15%;
+}
 .coding {
   position: relative;
   width: 85%;
