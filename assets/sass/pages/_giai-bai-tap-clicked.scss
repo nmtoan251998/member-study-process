@@ -2,7 +2,7 @@
     position: relative;
     width: 85%;
     margin: 5rem auto 0;
-    padding: 1.6rem;    
+    padding: 1.6rem;
 
     &__heading {
         float: left;
@@ -16,6 +16,7 @@
 
         &-btn {
             border-radius: 0;
+            cursor: pointer;            
         }
 
         &:hover .dropdown__list {            

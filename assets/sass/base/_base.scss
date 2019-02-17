@@ -4,6 +4,18 @@
 
 html {
     font-size: 62.5%;
+
+    @include breakpoint(laptop) {
+        font-size: 55%;
+    }
+
+    @include breakpoint(large-tablet) {
+        font-size: 50%;
+    }
+    
+    @include breakpoint(medium-tablet) {
+        font-size: 45%;
+    }
 }
 
 body {

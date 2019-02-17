@@ -14,7 +14,7 @@
         border-top: 1px solid $color-light;        
         cursor: pointer;
         visibility: hidden;
-        display: none;        
+        display: none;                
 
         &:hover {
             filter: brightness(120%);
@@ -24,6 +24,6 @@
     &__item {
         display: inline-block;           
         border-radius: 0px;        
-        text-align: left;        
+        text-align: left;               
     }
 }
