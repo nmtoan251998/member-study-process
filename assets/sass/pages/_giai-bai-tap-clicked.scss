@@ -19,7 +19,7 @@
             cursor: pointer;            
         }
 
-        &:hover .dropdown__list {            
+        &:hover .dropdown__list, &:active .dropdown__list {            
             visibility: visible;
             display: block;
         }
