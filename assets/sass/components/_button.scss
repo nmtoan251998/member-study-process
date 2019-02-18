@@ -4,10 +4,8 @@
 
     transition: transform .2s ease-in-out;
     
-    &--link {
-        @extend %btn--link;
-    }
-
+    &--link { @extend %btn--link; }
+    &--form { @extend %btn--form; }
     &--primary { @include btn-deco($color-blue, $color-light, $color-blue);}
 
     &:hover {
