@@ -1,0 +1,130 @@
+.heading-2, .heading-1 {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3.5px;
+  word-spacing: 5px;
+}
+
+*,
+*:link,
+*:visited {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 990px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  width: 100%;
+}
+
+.heading-1 {
+  font-size: 3.6rem;
+}
+
+.heading-2 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+.heading-2--light {
+  color: #ccc;
+}
+.heading-2--dark {
+  color: #252525;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-mb-s {
+  margin-bottom: 2.5rem !important;
+}
+
+.u-mb-m {
+  margin-bottom: 5rem !important;
+}
+
+.u-mb-l {
+  margin-bottom: 7.5rem !important;
+}
+
+.u-mb-xl {
+  margin-bottom: 10rem !important;
+}
+
+.u-mt-s {
+  margin-top: 2.5rem !important;
+}
+
+.u-mt-m {
+  margin-top: 5rem !important;
+}
+
+.u-mt-l {
+  margin-top: 7.5rem !important;
+}
+
+.u-mt-xl {
+  margin-top: 10rem !important;
+}
+
+.card {
+  background-color: black;
+  height: 35rem;
+  width: 22.5rem;
+  border-radius: 10px;
+}
+.card__ava {
+  height: 14.5rem;
+  width: 14.5rem;
+  border-radius: 50%;
+  background-color: white;
+  margin: 2rem auto 0.5rem;
+}
+.card__pofo a {
+  height: 5rem;
+  width: 5rem;
+  z-index: 9999;
+}
+.card__pofo img {
+  height: 100%;
+  width: 100%;
+}
+.about-us {
+  width: 50%;
+  margin: auto;
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 22.5rem));
+  grid-row-gap: 5rem;
+  grid-column-gap: 5rem;
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

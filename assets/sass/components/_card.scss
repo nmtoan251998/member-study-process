@@ -1,0 +1,30 @@
+.card {
+    background-color: black;
+    height: 35rem;
+    width: 22.5rem;
+    border-radius: 10px;
+
+    &__ava {
+        height: 14.5rem;
+        width: 14.5rem;
+        border-radius: 50%;
+        background-color: white;
+        margin: 2rem auto .5rem;
+    }
+
+    &__pofo {
+        a {
+            height: 5rem;
+            width: 5rem;
+            z-index: 9999;
+        }
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__staff {
+
+    }
+}
