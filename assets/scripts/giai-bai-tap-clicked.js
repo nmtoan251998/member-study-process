@@ -31,8 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
             let form = document.createElement("form")
             let input = document.createElement("input")
             let button = document.createElement("button")            
+            
+            const codingTable = document.querySelector('.coding__table')
 
-            console.log(recentTr.rowIndex)            
+            // console.log(recentTr.rowIndex)            
 
             // set attributes for elements
             let formAtt = {
@@ -63,10 +65,11 @@ document.addEventListener("DOMContentLoaded", () => {
             form.appendChild(input)
             form.appendChild(button)
             
-            // td.appendChild(form)            
-            // addedTr.appendChild(td)            
+            td.appendChild(form)            
+            addedTr.appendChild(td)            
             // addedTr = addedTr + ""                    
             // recentTr.insertAdjacentHTML("afterend", addedTr)
+            addedTr = codingTable.insertRow(0).insertCell(1)
         })
     })
 

@@ -1,4 +1,4 @@
-.heading-2, .heading-1 {
+.heading-3, .heading-2, .heading-1 {
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   letter-spacing: 3.5px;
   word-spacing: 5px;
@@ -53,6 +53,18 @@ body {
   color: #252525;
 }
 
+.heading-3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+.heading-3--light {
+  color: #ccc;
+}
+.heading-3--dark {
+  color: #252525;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -96,24 +108,36 @@ body {
 }
 
 .card {
-  background-color: black;
-  height: 35rem;
+  background-color: #e6e6e6;
+  height: 33.5rem;
   width: 22.5rem;
   border-radius: 10px;
+  box-shadow: 2px 5px 10px 2px rgba(102, 102, 102, 0.55);
 }
 .card__ava {
-  height: 14.5rem;
-  width: 14.5rem;
+  height: 16.5rem;
+  width: 16.5rem;
   border-radius: 50%;
-  background-color: white;
   margin: 2rem auto 0.5rem;
+  background-color: #fff;
+  background-size: cover;
+  background-position: center center;
 }
-.card__pofo a {
-  height: 5rem;
-  width: 5rem;
-  z-index: 9999;
+.card__ava-1 {
+  background-image: url(/assets/images/facebook-square-brands.svg);
 }
-.card__pofo img {
+.card__pofo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card__pofo-cta {
+  margin-top: 2rem;
+  display: block;
+  height: 3.5rem;
+  width: 3.5rem;
+}
+.card__pofo-cta__img {
   height: 100%;
   width: 100%;
 }

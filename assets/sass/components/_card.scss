@@ -1,27 +1,39 @@
 .card {
-    background-color: black;
-    height: 35rem;
+    background-color: $color-gray-1;
+    height: 33.5rem;
     width: 22.5rem;
     border-radius: 10px;
+    box-shadow: 2px 5px 10px 2px rgba($color-dark-2, .55);
 
     &__ava {
-        height: 14.5rem;
-        width: 14.5rem;
-        border-radius: 50%;
-        background-color: white;
+        height: 16.5rem;
+        width: 16.5rem;
+        border-radius: 50%;        
         margin: 2rem auto .5rem;
+        background-color: $color-light;
+        
+        background-size: cover;
+        background-position: center center;
+
+        &-1 {background-image: url(/assets/images/facebook-square-brands.svg);}
     }
 
     &__pofo {
-        a {
-            height: 5rem;
-            width: 5rem;
-            z-index: 9999;
-        }
-        img {
-            height: 100%;
-            width: 100%;
-        }
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;    
+
+        &-cta {
+            margin-top: 2rem;        
+            display: block;
+            height: 3.5rem;
+            width: 3.5rem;                
+
+            &__img {
+                height: 100%;
+                width: 100%;
+            }
+        }                        
     }
 
     &__staff {
