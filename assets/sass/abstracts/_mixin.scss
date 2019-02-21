@@ -5,18 +5,23 @@
             @content ;
         }
     }
-    @else if $point == medium-tablet {
+    @else if $point == tablet {
         @media (max-width: 767px) {
             @content ;
         }
     }
+    @else if $point == medium-tablet {
+        @media (max-width: 960px) {
+            @content ;
+        }
+    }
     @else if $point == large-tablet {
-        @media (max-width: 990px) {
+        @media (max-width: 1080px) {
             @content ;
         }
     }
     @else if $point == laptop {
-        @media (max-width: 1200px) {
+        @media (max-width: 1280px) {
             @content ;
         }
     }

@@ -13,17 +13,17 @@
 html {
   font-size: 62.5%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1280px) {
   html {
     font-size: 55%;
   }
 }
-@media (max-width: 990px) {
+@media (max-width: 1080px) {
   html {
     font-size: 50%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 960px) {
   html {
     font-size: 45%;
   }
@@ -52,6 +52,9 @@ body {
 .heading-2--dark {
   color: #252525;
 }
+.heading-2--primary {
+  color: #008861;
+}
 
 .heading-3 {
   font-weight: 600;
@@ -63,6 +66,9 @@ body {
 }
 .heading-3--dark {
   color: #252525;
+}
+.heading-3--primary {
+  color: #008861;
 }
 
 .clearfix::after {
@@ -108,7 +114,7 @@ body {
 }
 
 .card {
-  background-color: #e6e6e6;
+  background-color: #fff;
   height: 33.5rem;
   width: 22.5rem;
   border-radius: 10px;
@@ -141,6 +147,10 @@ body {
   height: 100%;
   width: 100%;
 }
+.card__pofo-cta:nth-child(2) img {
+  color: #fff;
+}
+
 .about-us {
   width: 50%;
   margin: auto;
@@ -148,7 +158,35 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 22.5rem));
   grid-row-gap: 5rem;
-  grid-column-gap: 5rem;
+}
+@media (max-width: 1600px) {
+  .about-us {
+    grid-column-gap: 15rem;
+  }
+}
+@media (max-width: 1280px) {
+  .about-us {
+    grid-column-gap: 10rem;
+    padding-left: 6rem;
+  }
+}
+@media (max-width: 1080px) {
+  .about-us {
+    padding-left: 10rem;
+    grid-column-gap: 5rem;
+  }
+}
+@media (max-width: 960px) {
+  .about-us {
+    width: 65%;
+    padding-left: 18rem;
+  }
+}
+@media (max-width: 767px) {
+  .about-us {
+    padding: 0;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=aboutUs.css.map */

@@ -6,6 +6,28 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 22.5rem));    
     grid-row-gap: 5rem;
-    grid-column-gap: 5rem;
-    // grid-column-gap: 25rem;
+
+    @include breakpoint(desktop) {        
+        grid-column-gap: 15rem;        
+    }
+
+    @include breakpoint(laptop) {        
+        grid-column-gap: 10rem; 
+        padding-left: 6rem;         
+    }
+
+    @include breakpoint(large-tablet) {        
+        padding-left: 10rem;
+        grid-column-gap: 5rem;       
+    }
+
+    @include breakpoint(medium-tablet) {
+        width: 65%;  
+        padding-left: 18rem;      
+    }
+
+    @include breakpoint(tablet) {
+        padding: 0;
+        justify-content: center;
+    }
 }
