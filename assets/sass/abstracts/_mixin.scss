@@ -6,7 +6,7 @@
         }
     }
     @else if $point == tablet {
-        @media (max-width: 767px) {
+        @media (max-width: 780px) {
             @content ;
         }
     }
@@ -25,16 +25,21 @@
             @content ;
         }
     }
+    @else if $point == medium-laptop {
+        @media (max-width: 1400px) {
+            @content ;
+        }
+    }
     @else if $point == desktop {
         @media (max-width: 1600px) {
             @content ;
         }
     }
     @else if $point == large-desktop {
-        @media (max-width: 1900px) {
+        @media (max-width: 1800px) {
             @content ;
         }
-    }
+    }    
 }
 
 @mixin btn-deco($bg-color, $txt-color, $bd-color) {    
