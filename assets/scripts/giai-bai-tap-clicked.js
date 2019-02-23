@@ -55,17 +55,18 @@ document.addEventListener("DOMContentLoaded", () => {
             input.classList.add('dynamic__input')
 
             button.setAttribute('type', buttonAtt.type)
-            button.setAttribute('value', buttonAtt.value)
-            button.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')
+            button.setAttribute('value', buttonAtt.value)            
+            button.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')            
+            button.innerText = "Nộp bài"
 
-            form.appendChild(input)
             form.appendChild(button)
+            form.appendChild(input)            
             
             const codingTable = document.querySelector('.coding__table')
             let newRow = codingTable.insertRow(recentTr+1)
             let newCell = newRow.insertCell(0)   
             
-            newCell.setAttribute("colspan", 3)
+            newCell.setAttribute("colspan", 4)
             newCell.appendChild(form)
         })
     })

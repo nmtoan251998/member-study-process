@@ -234,14 +234,18 @@ body {
   display: block;
 }
 
-.dynamic {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: 9999;
-  top: 50%;
-  left: 50%;
+.dynamic__btn {
+  width: 15%;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+.dynamic__input {
+  width: 60%;
+  height: 4rem;
+  padding: 15px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  transform: translateY(2px);
 }
 
 /*# sourceMappingURL=giaiBaiTapClicked.css.map */
