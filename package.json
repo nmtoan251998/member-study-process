@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "devserver": "live-server",
-    "compile-sass": "sass assets/sass/main.scss assets/css/aboutUs.css"
+    "compile-sass": "sass assets/sass/main.scss assets/css/giaiBaiTap.css"
   },
   "author": "Noat",
   "license": "ISC",
