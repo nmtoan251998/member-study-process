@@ -22,19 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 Solution: Find row index then insert
                 Step 1: Successfully getting tr index using el.rowIndex (ondone)
-                Step 2: Inserting (onwork)
-            */
+                Step 2: Inserting (onwork) -> (ondone)
+                Step 3: Styling the form (onwork) 
+            */            
 
-            let recentTr = el.parentElement.parentElement
-            let addedTr = document.createElement("tr")
-            let td = document.createElement("td")
-            let form = document.createElement("form")
-            let input = document.createElement("input")
-            let button = document.createElement("button")            
-            
-            const codingTable = document.querySelector('.coding__table')
-
-            // console.log(recentTr.rowIndex)            
+            let recentTr = el.parentElement.parentElement.rowIndex
+                        
+            const form = document.createElement("form"),
+                input = document.createElement("input"),
+                button = document.createElement("button")                                                           
 
             // set attributes for elements
             let formAtt = {
@@ -43,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             inputAtt = {
                 type: 'text',
-                name: 'link'
+                name: 'link',
+                placeholder: 'Điền URL đã giải bài tập vào đây'
             },
             buttonAtt = {
                 type: 'submit',
@@ -56,20 +53,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
             input.setAttribute('type', inputAtt.type)
             input.setAttribute('name', inputAtt.name)
+            input.setAttribute('placeholder', inputAtt.placeholder)
             input.classList.add('dynamic__input')
 
             button.setAttribute('type', buttonAtt.type)
-            button.setAttribute('value', buttonAtt.value)
-            button.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')
+            button.setAttribute('value', buttonAtt.value)            
+            button.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')            
+            button.innerText = "Nộp bài"
 
-            form.appendChild(input)
             form.appendChild(button)
+            form.appendChild(input)            
             
-            td.appendChild(form)            
-            addedTr.appendChild(td)            
-            // addedTr = addedTr + ""                    
-            // recentTr.insertAdjacentHTML("afterend", addedTr)
-            addedTr = codingTable.insertRow(0).insertCell(1)
+            const codingTable = document.querySelector('.coding__table')
+            let newRow = codingTable.insertRow(recentTr+1)
+            let newCell = newRow.insertCell(0)   
+            
+            newCell.setAttribute("colspan", 4)
+            newCell.appendChild(form)
         })
     })
 

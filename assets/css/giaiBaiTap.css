@@ -1,9 +1,49 @@
-* {
+.heading-3, .heading-2, .heading-1 {
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  letter-spacing: 3.5px;
+  word-spacing: 5px;
+}
+
+.btn--link {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn--form {
+  padding: 1rem 2rem;
+  font-size: 1.35rem;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+*,
+*:link,
+*:visited {
   box-sizing: inherit;
 }
 
 html {
   font-size: 62.5%;
+}
+@media (max-width: 1280px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1080px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 960px) {
+  html {
+    font-size: 45%;
+  }
 }
 
 body {
@@ -12,6 +52,7 @@ body {
   padding: 0;
   font-size: 1.6rem;
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+  width: 100%;
 }
 
 .heading-1 {
@@ -27,6 +68,24 @@ body {
 }
 .heading-2--dark {
   color: #252525;
+}
+.heading-2--primary {
+  color: #008861;
+}
+
+.heading-3 {
+  font-weight: 600;
+  font-size: 2.4rem;
+  letter-spacing: 0.5px;
+}
+.heading-3--light {
+  color: #ccc;
+}
+.heading-3--dark {
+  color: #252525;
+}
+.heading-3--primary {
+  color: #008861;
 }
 
 .clearfix::after {
@@ -55,19 +114,20 @@ body {
   margin-bottom: 10rem !important;
 }
 
-.heading-1, .heading-2 {
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  letter-spacing: 3.5px;
-  word-spacing: 5px;
+.u-mt-s {
+  margin-top: 2.5rem !important;
 }
 
-.btn--link {
-  padding: 1rem 2rem;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 1.35rem;
-  text-transform: uppercase;
-  text-align: center;
+.u-mt-m {
+  margin-top: 5rem !important;
+}
+
+.u-mt-l {
+  margin-top: 7.5rem !important;
+}
+
+.u-mt-xl {
+  margin-top: 10rem !important;
 }
 
 .btn {
@@ -100,14 +160,17 @@ body {
   padding-bottom: 0.5rem;
 }
 @media (max-width: 400px) {
+  .course__header {
+    width: 100%;
+  }
   .course__heading {
     min-width: 100%;
     margin: 0 auto;
     text-align: center;
   }
   .course__btn {
-    width: 100%;
-    margin: 2rem auto 0;
+    width: 65%;
+    transform: translateX(-7rem);
   }
   .course__intro {
     text-align: center;

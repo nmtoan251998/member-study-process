@@ -29,7 +29,7 @@
 
     @include breakpoint(medium-tablet) {
         padding-left: 12.5rem;
-        grid-template-columns: repeat(auto-fill, minmax(min-content, 22.5rem))   
+        grid-template-columns: repeat(auto-fill, minmax(min-content, 22.5rem))
     }
 
     @include breakpoint(tablet) {        
