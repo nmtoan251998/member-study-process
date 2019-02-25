@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let recentTr = el.parentElement.parentElement.rowIndex
                         
-            let form = document.createElement("form"),
+            const form = document.createElement("form"),
                 input = document.createElement("input"),
                 button = document.createElement("button")                                                           
 
@@ -39,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             inputAtt = {
                 type: 'text',
-                name: 'link'
+                name: 'link',
+                placeholder: 'Điền URL đã giải bài tập vào đây'
             },
             buttonAtt = {
                 type: 'submit',
@@ -52,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             input.setAttribute('type', inputAtt.type)
             input.setAttribute('name', inputAtt.name)
+            input.setAttribute('placeholder', inputAtt.placeholder)
             input.classList.add('dynamic__input')
 
             button.setAttribute('type', buttonAtt.type)

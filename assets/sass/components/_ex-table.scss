@@ -11,6 +11,13 @@
 
     -webkit-border-vertical-spacing: 10px;
     
+    @include breakpoint(medium-tablet) {
+        .btn { font-size: $font-size-xs; }
+    }
+    // @include breakpoint(medium-tablet) {
+    //     .btn { font-size: $font-size-s; }
+    // }
+    
     color: $color-dark-2;
     padding: .5rem;
     padding-top: 4rem;
@@ -24,11 +31,11 @@
     
     &-head {
         text-align: left;     
-        color: $color-dark-2;         
+        color: $color-dark-2;                   
 
-        &:nth-child(1) {width: 10%}
-        &:nth-child(2) {width: 20%}
-        &:nth-child(3) {width: 40%}
+        &:nth-child(1) {width: 5%}
+        &:nth-child(2) {width: 15%}
+        &:nth-child(3) {width: 50%}
         &:nth-child(4) {width: 15%}
         &:nth-child(5) {width: 15%}
     }
