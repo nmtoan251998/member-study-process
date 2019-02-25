@@ -77,6 +77,7 @@ body {
   font-weight: 600;
   font-size: 2.4rem;
   letter-spacing: 0.5px;
+  margin: 2rem 0 0.5rem;
 }
 .heading-3--light {
   color: #ccc;
@@ -147,16 +148,16 @@ body {
 
 .card {
   background-color: #fff;
-  height: 33.5rem;
+  height: 32.5rem;
   width: 22.5rem;
   border-radius: 10px;
   box-shadow: 2px 5px 10px 2px rgba(102, 102, 102, 0.55);
 }
 .card__ava {
-  height: 16.5rem;
-  width: 16.5rem;
+  height: 16rem;
+  width: 16rem;
   border-radius: 50%;
-  margin: 2rem auto 0.5rem;
+  margin: 2rem auto 3rem;
   background-color: #fff;
   background-size: cover;
   background-position: center center;
@@ -164,23 +165,22 @@ body {
 .card__ava-1 {
   background-image: url(/assets/images/facebook-square-brands.svg);
 }
-.card__pofo {
+.card__portfo {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.card__pofo-cta {
-  margin-top: 2rem;
-  display: block;
-  height: 3.5rem;
-  width: 3.5rem;
+.card__portfo-cta--1 {
+  color: #24292e;
 }
-.card__pofo-cta__img {
-  height: 100%;
-  width: 100%;
+.card__portfo-cta--2 {
+  color: #4267b2;
 }
-.card__pofo-cta:nth-child(2) img {
-  color: #fff;
+.card__portfo-cta--3 {
+  color: #0077B5;
+}
+.card__portfo-icon {
+  font-size: 4.5rem;
 }
 
 .about-us {
