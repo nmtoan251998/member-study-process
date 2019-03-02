@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         
             const form = document.createElement("form"),
                 input = document.createElement("input"),
-                button = document.createElement("button")                                                           
+                button = document.createElement("button"),
+                closeBtn = document.createElement("a")        
 
             // set attributes for elements
             let formAtt = {
@@ -61,8 +62,11 @@ document.addEventListener("DOMContentLoaded", () => {
             button.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')            
             button.innerText = "Nộp bài"
 
+            closeBtn.classList.add('dynamic__closeBtn', 'fas', 'fa-times')
+
             form.appendChild(button)
-            form.appendChild(input)            
+            form.appendChild(input)
+            form.appendChild(closeBtn)
             
             const codingTable = document.querySelector('.coding__table')
             let newRow = codingTable.insertRow(recentTr+1)
