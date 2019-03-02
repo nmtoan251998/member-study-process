@@ -29,6 +29,12 @@
             &--3 {color: #0077B5}
         }   
         
-        &-icon { font-size: 4.5rem; }
+        &-icon { 
+            font-size: 3.5rem; 
+
+            &:hover {
+                opacity: .9;
+            }
+        }
     }    
 }

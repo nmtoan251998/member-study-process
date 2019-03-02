@@ -180,7 +180,10 @@ body {
   color: #0077B5;
 }
 .card__portfo-icon {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+}
+.card__portfo-icon:hover {
+  opacity: 0.9;
 }
 
 .about-us {
