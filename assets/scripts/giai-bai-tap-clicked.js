@@ -13,58 +13,46 @@ document.addEventListener("DOMContentLoaded", () => {
     * Create form > input:text when btn-submit is clicked
     */
 
+    function removeAllChild(el) {
+        while(el.firstChild) el.removeChild(el.firstChild)
+    }    
+
     const submitBtn = document.querySelectorAll(".btn-submit")    
 
-    submitBtn.forEach(el => {
-        el.addEventListener("click", event => {            
-            /*
-                Trying to insert <form> into table row
-                
-                Solution: Find row index then insert
-                Step 1: Successfully getting tr index using el.rowIndex (ondone)
-                Step 2: Inserting (onwork) -> (ondone)
-                Step 3: Styling the form (onwork) 
-            */            
+    let submitBtnIsClicked = false
 
+    submitBtn.forEach( el => {
+        el.addEventListener("click", event => {            
             let recentTr = el.parentElement.parentElement.rowIndex
                         
             const form = document.createElement("form"),
                 input = document.createElement("input"),
-                button = document.createElement("button"),
-                closeBtn = document.createElement("a")        
+                btn = document.createElement("button"),
+                closeBtn = document.createElement("a")                    
+                        
+            if (submitBtnIsClicked) return            
+            submitBtnIsClicked = true    
 
-            // set attributes for elements
-            let formAtt = {
-                method: 'get',
-                action: '#'
-            },
-            inputAtt = {
-                type: 'text',
-                name: 'link',
-                placeholder: 'Điền URL đã giải bài tập vào đây'
-            },
-            buttonAtt = {
-                type: 'submit',
-                value: 'Submit'
-            }
-                                
-            form.setAttribute('method', formAtt.method)
-            form.setAttribute('action', formAtt.action)
+            form.setAttribute('method', "get")
+            form.setAttribute('action', "#")
             form.classList.add('dynamic__form')
 
-            input.setAttribute('type', inputAtt.type)
-            input.setAttribute('name', inputAtt.name)
-            input.setAttribute('placeholder', inputAtt.placeholder)
+            input.setAttribute('type', "text")
+            input.setAttribute('name', "link")
+            input.setAttribute('placeholder', "Điền URL đã giải bài tập vào đây")
             input.classList.add('dynamic__input')
 
-            button.setAttribute('type', buttonAtt.type)
-            button.setAttribute('value', buttonAtt.value)            
-            button.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')            
-            button.innerText = "Nộp bài"
+            btn.setAttribute('type', "submit")
+            btn.setAttribute('value', "Submit")            
+            btn.classList.add('btn', 'btn--primary', 'btn--form', 'dynamic__btn')            
+            btn.innerText = "Nộp bài"
 
+            closeBtn.setAttribute('title', "Đóng")
             closeBtn.classList.add('dynamic__closeBtn', 'fas', 'fa-times')
 
-            form.appendChild(button)
+            removeAllChild(form)
+
+            form.appendChild(btn)
             form.appendChild(input)
             form.appendChild(closeBtn)
             
@@ -73,7 +61,9 @@ document.addEventListener("DOMContentLoaded", () => {
             let newCell = newRow.insertCell(0)   
             
             newCell.setAttribute("colspan", 4)
-            newCell.appendChild(form)
+            newCell.appendChild(form)            
+                                                    
+            closeBtn.addEventListener("click", () => removeAllChild(form) )            
         })
     })
 
